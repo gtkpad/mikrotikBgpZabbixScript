@@ -31,7 +31,7 @@ if __name__ == '__main__':
     router.connect(host=ip, username=username, password=password, port=api_port)
 
     if router.error:
-        print("Erro ao conectar ao router")
+        print("0")
         sys.exit(1)
 
     if method == 'getPeers':
@@ -59,7 +59,7 @@ if __name__ == '__main__':
                     item_response = item_response.replace(" ", "")
                 print(response['data'][item])
             else:
-                print("Item não encontrado")
+                print("0")
                 sys.exit(1)
         else:
             print(json.dumps(response).replace(" ", ""))
