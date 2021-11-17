@@ -11,7 +11,7 @@ if __name__ == '__main__':
     with open('{}/mikrotikBgp.log'.format(path), 'a') as log_file:
         log_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         params = " ".join(sys.argv[1:])
-        print('{} {}'.format(log_time, params), file=log_file)
+        # print('{} {}'.format(log_time, params), file=log_file)
 
     if len(sys.argv) < 6:
         print("{} <IP> <USER> <PASS> <API_PORT> <METHOD>".format(sys.argv[0]))
